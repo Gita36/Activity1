@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Nature1.jpg" />
+    <None Remove="Nature2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Nature1.jpg" />
+    <Resource Include="Nature2.jpg" />
+  </ItemGroup>
+
+</Project>
