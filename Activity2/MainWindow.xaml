@@ -1,0 +1,40 @@
+﻿<Window x:Class="Activity2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Activity2"
+        mc:Ignorable="d"
+        Title="Calculation" Height="450" Width="800">
+
+    <StackPanel Orientation="Vertical">
+        <Border BorderBrush="Black" BorderThickness="1" Margin="20">
+            <Grid Width="250" Margin="0">
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170" />
+                <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Content="Choose first number:" HorizontalContentAlignment="Right" FontStyle="Italic" />
+                <Label Grid.Row="1" Grid.Column="0" Content="Choose second number:" HorizontalContentAlignment="Right" FontStyle="Italic" />
+                <TextBox Name="txtNumber1" Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="5" />
+                <TextBox Name="txtNumber2" Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="5" />
+
+
+
+            </Grid>
+        </Border>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20,0,0,20">
+            <Button Name="btnAdd" Margin="0,0,20,0" Content="+" Width="30" Click="btnOperator" />
+            <Button Name="btnSubtract" Margin="0,0,20,0" Content="-" Width="30" Click="btnOperator" />
+            <Button Name="btnMultiply" Margin="0,0,20,0" Content="X" Width="30" Click="btnOperator" />
+            <Button Name="btnDivide" Margin="0,0,20,0" Content="/" Width="30" Click="btnOperator" />
+        </StackPanel>
+        <Label Content="Hidden initially" Width="200" Height="30" Background="Lavender" BorderBrush="Black" BorderThickness="1"
+               FontWeight="Bold" Foreground="Red"
+               Visibility="Collapsed" Name="lblAnswer" Margin="0,0,0,20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" />
+    </StackPanel>
+</Window>
