@@ -35,6 +35,6 @@
         </StackPanel>
         <Label Content="Hidden initially" Width="200" Height="30" Background="Lavender" BorderBrush="Black" BorderThickness="1"
                FontWeight="Bold" Foreground="Red"
-               Visibility="Collapsed" Name="lblAnswer" Margin="0,0,0,20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" />
+               Visibility="Collapsed" Name="lblResult" Margin="0,0,0,20" HorizontalContentAlignment="Center" HorizontalAlignment="Center" />
     </StackPanel>
 </Window>
